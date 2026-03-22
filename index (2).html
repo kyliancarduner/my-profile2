@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Kylian Carduner — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="portfolio-style.css"/>
+</head>
+<body>
+
+<div class="grain"></div>
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<!-- ══ NAVBAR ══ -->
+<header class="nav" id="nav">
+  <a href="#" class="nav__logo">KC<span class="nav__logo-dot"></span></a>
+  <nav class="nav__links">
+    <a href="#about">À propos</a>
+    <a href="#origins">Origines</a>
+    <a href="#sports">Sports</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav__right">
+    <a href="mailto:kylian.carduner@student.ieseg.fr" class="btn btn-ghost btn-sm">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M1 5l7 5 7-5" stroke="currentColor" stroke-width="1.5"/></svg>
+      Me contacter
+    </a>
+  </div>
+</header>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="hero">
+  <div class="hero__bg-grid"></div>
+  <div class="hero__orb hero__orb--1"></div>
+  <div class="hero__orb hero__orb--2"></div>
+
+  <div class="hero__inner">
+    <div class="hero__eyebrow">
+      <span class="eyebrow-dot"></span>
+      Étudiant · Sportif · Polyglotte
+    </div>
+
+    <h1 class="hero__title">
+      <span class="hero__title-line">Kylian</span>
+      <span class="hero__title-line hero__title-line--em">Carduner<em class="title-flag">🇫🇷🇸🇪🇨🇲</em></span>
+    </h1>
+
+    <p class="hero__sub">
+      Bachelor à l'<strong>IESEG</strong> · Paris.<br/>
+      Franco-suédo-camerounais, passionné de sport, de langues et de nouveaux challenges.
+    </p>
+
+    <div class="hero__cta">
+      <a href="#about" class="btn btn-blue btn-lg">Découvrir mon profil
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="btn btn-out btn-lg">LinkedIn
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__photo-wrap">
+    <div class="hero__photo-ring hero__photo-ring--outer"></div>
+    <div class="hero__photo-ring hero__photo-ring--inner"></div>
+    <div class="hero__photo">
+      <div class="hero__photo-placeholder">
+        <span>KC</span>
+        <p>Remplace cette image<br/>par ta photo</p>
+      </div>
+    </div>
+    <!-- Floating chips -->
+    <div class="chip chip--1">🏀 Basket</div>
+    <div class="chip chip--2">🇯🇵 Japonais</div>
+    <div class="chip chip--3">📍 Paris</div>
+    <div class="chip chip--4">🎓 IESEG</div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="m-item"><span>🏀</span> Basket</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🇸🇪</span> Suédois</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🇯🇵</span> Japonais</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🎓</span> IESEG Bachelor</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🇫🇷</span> Français</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🇨🇲</span> Camerounais</span><span class="m-sep">—</span>
+    <span class="m-item"><span>⚽</span> Football</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🎾</span> Tennis</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🏓</span> Ping-pong</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🌍</span> Seattle Camps</span><span class="m-sep">—</span>
+    <!-- duplicate -->
+    <span class="m-item"><span>🏀</span> Basket</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🇸🇪</span> Suédois</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🇯🇵</span> Japonais</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🎓</span> IESEG Bachelor</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🇫🇷</span> Français</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🇨🇲</span> Camerounais</span><span class="m-sep">—</span>
+    <span class="m-item"><span>⚽</span> Football</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🎾</span> Tennis</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🏓</span> Ping-pong</span><span class="m-sep">—</span>
+    <span class="m-item"><span>🌍</span> Seattle Camps</span><span class="m-sep">—</span>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section class="sec" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-left reveal">
+        <span class="eyebrow">À propos</span>
+        <h2 class="sec-title">Curieux de tout,<br/><em>passionné par l'humain.</em></h2>
+        <p class="about-text">Je m'appelle Kylian, j'ai grandi entre plusieurs cultures et ça a forgé une vision du monde que j'essaie de transmettre dans tout ce que je fais. Actuellement en Bachelor à l'IESEG, je construis mon parcours à l'intersection du business, du sport et des langues.</p>
+        <p class="about-text">J'ai eu la chance de vivre des expériences uniques — des summers camps à Seattle en tant que counselor, des stages en entreprise dès la seconde, et un apprentissage autodidacte du japonais. Chaque expérience m'a appris quelque chose d'essentiel sur moi-même.</p>
+
+        <div class="about-tags">
+          <span class="atag">🎓 IESEG Bachelor</span>
+          <span class="atag">🌐 4 langues</span>
+          <span class="atag">✈️ Seattle × 3</span>
+          <span class="atag">💼 2 stages</span>
+        </div>
+      </div>
+
+      <div class="about-right reveal" style="--d:150ms">
+        <div class="stat-cards">
+          <div class="scard">
+            <div class="scard__val">4</div>
+            <div class="scard__label">Langues parlées</div>
+            <div class="scard__sub">FR · EN · SV · JA (en cours)</div>
+          </div>
+          <div class="scard scard--blue">
+            <div class="scard__val">3×</div>
+            <div class="scard__label">Seattle Summer Camp</div>
+            <div class="scard__sub">2022 · 2023 · 2024 Counselor</div>
+          </div>
+          <div class="scard">
+            <div class="scard__val">2</div>
+            <div class="scard__label">Stages en entreprise</div>
+            <div class="scard__sub">55 Agency · D2X Consulting</div>
+          </div>
+          <div class="scard scard--blue">
+            <div class="scard__val">5+</div>
+            <div class="scard__label">Sports pratiqués</div>
+            <div class="scard__sub">Tennis · Foot · Basket · Rugby · Ping</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ ORIGINS ══ -->
+<section class="sec sec-alt" id="origins">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Mes origines</span>
+      <h2 class="sec-title">Un mélange de<br/><em>trois cultures.</em></h2>
+      <p class="sec-desc">Mon identité est construite à l'intersection de trois pays, trois histoires, trois façons de voir le monde.</p>
+    </div>
+
+    <div class="origins-grid">
+      <div class="ocard reveal" style="--c:#0052B4">
+        <div class="ocard__flag">🇫🇷</div>
+        <div class="ocard__glow"></div>
+        <h3>Français</h3>
+        <p>Né et grandi en France, Paris est ma base. La culture française — sa rigueur intellectuelle, son art de vivre — est au cœur de qui je suis.</p>
+        <div class="ocard__tag">Culture · Langue maternelle</div>
+      </div>
+      <div class="ocard reveal" style="--c:#006AA7;--d:120ms">
+        <div class="ocard__flag">🇸🇪</div>
+        <div class="ocard__glow"></div>
+        <h3>Suédois</h3>
+        <p>Mon père est moitié français, moitié suédois. Cette partie scandinave m'attire profondément — au point que j'ai décidé d'apprendre le suédois.</p>
+        <div class="ocard__tag">Héritage · Prochain apprentissage</div>
+      </div>
+      <div class="ocard reveal" style="--c:#007A5E;--d:240ms">
+        <div class="ocard__flag">🇨🇲</div>
+        <div class="ocard__glow"></div>
+        <h3>Camerounais</h3>
+        <p>Ma mère est camerounaise. Cette origine africaine m'a transmis une chaleur humaine, un sens de la communauté et une énergie que je porte partout.</p>
+        <div class="ocard__tag">Héritage · Fierté</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SPORTS ══ -->
+<section class="sec" id="sports">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Le sport</span>
+      <h2 class="sec-title">Le terrain comme<br/><em>école de vie.</em></h2>
+      <p class="sec-desc">Depuis tout petit, le sport est ma constante. Chaque discipline m'a appris quelque chose d'essentiel.</p>
+    </div>
+
+    <div class="sports-flex">
+
+      <div class="sport-item sport-item--main reveal">
+        <div class="sport-item__ico">🏀</div>
+        <div class="sport-item__body">
+          <div class="sport-item__label">Sport actuel</div>
+          <h3>Basket</h3>
+          <p>Mon sport du moment. Le basket m'a appris la lecture du jeu collectif, la communication sous pression et la gestion de l'ego dans une équipe.</p>
+        </div>
+        <div class="sport-item__tag sport-item__tag--on">Actif</div>
+      </div>
+
+      <div class="sports-secondary">
+        <div class="sport-mini reveal" style="--d:80ms">
+          <span>⚽</span>
+          <div>
+            <h4>Football</h4>
+            <p>Pratiqué depuis l'enfance. La base de tout.</p>
+          </div>
+        </div>
+        <div class="sport-mini reveal" style="--d:160ms">
+          <span>🎾</span>
+          <div>
+            <h4>Tennis</h4>
+            <p>Discipline mentale. Un duel avec soi-même.</p>
+          </div>
+        </div>
+        <div class="sport-mini reveal" style="--d:240ms">
+          <span>🏉</span>
+          <div>
+            <h4>Rugby</h4>
+            <p>Collectif, physique, exigeant. Character builder.</p>
+          </div>
+        </div>
+        <div class="sport-mini reveal" style="--d:320ms">
+          <span>🏓</span>
+          <div>
+            <h4>Tennis de table</h4>
+            <p>Réflexes, vitesse, précision. Ma détente.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Seattle callout -->
+    <div class="seattle-card reveal" style="--d:100ms">
+      <div class="seattle-card__left">
+        <div class="seattle-card__ico">🌍</div>
+        <div>
+          <h4>Seattle Summer Camp × 3</h4>
+          <p>2022, 2023 et 2024 aux États-Unis. En 2024, j'ai été pris comme <strong>Counselor</strong> — encadrer des jeunes en anglais toute la journée a transformé mon niveau de langue. Une expérience de vie autant que sportive.</p>
+        </div>
+      </div>
+      <div class="seattle-card__tags">
+        <span>🇺🇸 Seattle</span>
+        <span>2022–2024</span>
+        <span>Counselor '24</span>
+        <span>Anglais fluent</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS / LANGUES ══ -->
+<section class="sec sec-alt" id="projects">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Projets & Langues</span>
+      <h2 class="sec-title">Apprendre,<br/><em>encore et toujours.</em></h2>
+      <p class="sec-desc">Les langues sont ma façon d'explorer le monde sans bouger. Chaque langue aprise est une nouvelle fenêtre.</p>
+    </div>
+
+    <div class="lang-grid">
+
+      <!-- Japonais -->
+      <div class="lcard lcard--main reveal">
+        <div class="lcard__header">
+          <div class="lcard__flag">🇯🇵</div>
+          <div class="lcard__status lcard__status--active">En cours</div>
+        </div>
+        <h3>Japonais</h3>
+        <p class="lcard__sub">日本語を勉強しています</p>
+        <p>Mon projet de langue principal. J'ai choisi de commencer directement par le vocabulaire oral et les formulations naturelles de conversation — l'objectif : parler couramment avant mon voyage au Japon en <strong>août 2026</strong>.</p>
+        <div class="lcard__progress">
+          <div class="lcard__progress-bar">
+            <div class="lcard__progress-fill" style="width:35%"></div>
+          </div>
+          <span>Niveau intermédiaire débutant</span>
+        </div>
+        <div class="lcard__goal">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 4v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Objectif : Tokyo · Août 2026
+        </div>
+      </div>
+
+      <!-- Suédois -->
+      <div class="lcard reveal" style="--d:120ms">
+        <div class="lcard__header">
+          <div class="lcard__flag">🇸🇪</div>
+          <div class="lcard__status lcard__status--next">Prochain</div>
+        </div>
+        <h3>Suédois</h3>
+        <p class="lcard__sub">Nästa språk</p>
+        <p>Mes origines suédoises me donnent envie de me reconnecter à cette culture. Le suédois est ma prochaine langue après le japonais.</p>
+        <div class="lcard__progress">
+          <div class="lcard__progress-bar">
+            <div class="lcard__progress-fill lcard__progress-fill--grey" style="width:5%"></div>
+          </div>
+          <span>Notions de base</span>
+        </div>
+      </div>
+
+      <!-- Anglais -->
+      <div class="lcard reveal" style="--d:240ms">
+        <div class="lcard__header">
+          <div class="lcard__flag">🇺🇸</div>
+          <div class="lcard__status lcard__status--done">Maîtrisé</div>
+        </div>
+        <h3>Anglais</h3>
+        <p class="lcard__sub">Fluent</p>
+        <p>Renforcé par trois étés de summer camp à Seattle, dont la dernière en tant que Counselor — parler anglais toute la journée pendant des semaines a été le meilleur apprentissage possible.</p>
+        <div class="lcard__progress">
+          <div class="lcard__progress-bar">
+            <div class="lcard__progress-fill lcard__progress-fill--green" style="width:90%"></div>
+          </div>
+          <span>Niveau avancé / courant</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Voyage Japon callout -->
+    <div class="japan-card reveal" style="--d:150ms">
+      <div class="japan-card__left">
+        <div class="japan-card__emoji">🗾</div>
+        <div>
+          <h4>Voyage au Japon — Août 2026</h4>
+          <p>22 jours au Japon avec deux amis : Tokyo, Kawaguchiko, Kyoto, Osaka. Un voyage construit autour de la nourriture, des paysages et de la culture. Réservé, préparé, attendu.</p>
+        </div>
+      </div>
+      <div class="japan-card__cities">
+        <span>🗼 Tokyo</span>
+        <span>🗻 Kawaguchiko</span>
+        <span>⛩️ Kyoto</span>
+        <span>🦀 Osaka</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ══ -->
+<section class="sec" id="experience">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Expériences</span>
+      <h2 class="sec-title">Premiers pas<br/><em>dans le monde pro.</em></h2>
+    </div>
+
+    <div class="xp-list">
+      <div class="xp-item reveal">
+        <div class="xp-item__left">
+          <div class="xp-ico">55</div>
+          <div class="xp-line"></div>
+        </div>
+        <div class="xp-item__body">
+          <div class="xp-item__meta">
+            <span class="xp-company">55 Agency</span>
+            <span class="xp-date">Fin de seconde · 1 semaine</span>
+          </div>
+          <h4>Stage d'observation</h4>
+          <p>Agence spécialisée dans l'amélioration des performances en ligne. Première immersion dans l'univers du marketing digital et de la data. Découverte des enjeux du tracking et de l'analytics pour les grandes marques.</p>
+          <div class="xp-tags">
+            <span>Marketing digital</span>
+            <span>Data</span>
+            <span>Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="xp-item reveal" style="--d:120ms">
+        <div class="xp-item__left">
+          <div class="xp-ico xp-ico--blue">D2X</div>
+          <div class="xp-line"></div>
+        </div>
+        <div class="xp-item__body">
+          <div class="xp-item__meta">
+            <span class="xp-company">D2X Consulting</span>
+            <span class="xp-date">Fin de seconde · 1 semaine</span>
+          </div>
+          <h4>Stage d'observation</h4>
+          <p>Cabinet de conseil. Découverte des métiers du consulting : analyse, recommandations clients, présentations. Première vision concrète de ce que signifie résoudre des problèmes business avec méthode.</p>
+          <div class="xp-tags">
+            <span>Consulting</span>
+            <span>Stratégie</span>
+            <span>Business</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="xp-item reveal" style="--d:240ms">
+        <div class="xp-item__left">
+          <div class="xp-ico xp-ico--green">IE</div>
+        </div>
+        <div class="xp-item__body">
+          <div class="xp-item__meta">
+            <span class="xp-company">IESEG School of Management</span>
+            <span class="xp-date">En cours · Bachelor</span>
+          </div>
+          <h4>Étudiant en Bachelor</h4>
+          <p>Formation en management à l'IESEG, une des meilleures business schools françaises. Construction d'une base solide en gestion, stratégie et finance, avec une ouverture internationale au cœur du programme.</p>
+          <div class="xp-tags">
+            <span>Management</span>
+            <span>Finance</span>
+            <span>International</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact-sec" id="contact">
+  <div class="contact-orb"></div>
+  <div class="container">
+    <div class="contact-inner reveal">
+      <span class="eyebrow" style="color:var(--bl)">Contact</span>
+      <h2>Travaillons<br/><em>ensemble.</em></h2>
+      <p>Une question, une opportunité, un projet ? Je suis toujours ouvert à de nouvelles conversations.</p>
+      <div class="contact-btns">
+        <a href="mailto:kylian.carduner@student.ieseg.fr" class="btn btn-blue btn-lg">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M1 5l7 5 7-5" stroke="currentColor" stroke-width="1.5"/></svg>
+          Envoyer un email
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="btn btn-out btn-lg">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M5 7v4M5 5v.5M8 11V8.5C8 7.7 8.7 7 9.5 7S11 7.7 11 8.5V11M8 7v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="footer__logo">KC<span class="nav__logo-dot"></span></span>
+    <p class="footer__copy">© 2025 Kylian Carduner — Portfolio</p>
+    <div class="footer__socials">
+      <a href="mailto:kylian.carduner@student.ieseg.fr" class="soc-btn" title="Email">✉</a>
+      <a href="https://linkedin.com" target="_blank" class="soc-btn" title="LinkedIn">in</a>
+    </div>
+  </div>
+</footer>
+
+<script src="portfolio-script.js"></script>
+</body>
+</html>
